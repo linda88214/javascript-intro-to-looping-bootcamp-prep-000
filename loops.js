@@ -1,8 +1,19 @@
 function forLoop(array) {
-for (let i = 0; i < 25; i++) {
-  console.log("I am" + i + "strange loops");
+  for (let i = 0; i < 25; i++) {
+    array.push('I am ${1} strange loop ${i===0 ? \'\' : \'s\'}.')
+  }
+  return array
 }
-}
+
+function forLoop(array) {
+  for (let i = 0; i < 25; i++) {
+    if(i === 1) {
+      return "I am" + i + "strange loop"
+    } else {
+      return "I am" + i + "strange loops"
+    };
+  };
+};
 
 function whileLoop(n) {
   while (n > 0) {
